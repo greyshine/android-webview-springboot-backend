@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="js/main.js"></script>
+        <script src="js/ajax.js"></script>
+        <script src="js/simpleaccess.js"></script>
+
+    </head>
+
+    <body>
+
+        <div>Servertime</div>
+        <div id="time">...time...</div>
+        <button id="btnTime">Fetch time2</button>
+
+        <script>
+            ajax.enhanceUrl = (url)=>{
+                return 'http://localhost:8080/'+ url;
+            };
+
+        </script>
+
+    </body>
+
+</html>
